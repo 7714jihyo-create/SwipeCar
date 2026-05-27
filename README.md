@@ -16,7 +16,7 @@
 
 ## 🛠️ 기술 스택 (Tech Stack)
 
-* **Engine**: Unity 2022.3.61f1
+* **Engine**: Unity 2022.3.62f1
 * **Language**: C#
 * **Physics**: Transform-based Movement, Custom Deceleration (마찰력 알고리즘)
 * **Audio**: AudioSource Component (One-shot SFX)
