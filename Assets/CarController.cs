@@ -23,15 +23,15 @@ public class CarController : MonoBehaviour
         {
             
             this.startPos = Input.mousePosition;
-            flag.transform.position = transform.position;
-
+        }
+        else if(Input.GetMouseButtonUp(0)){            
             Vector2 endpos = Input.mousePosition;
             float swipelength = endpos.x - this.startPos.x;
             this.speed = swipelength / 500.0f;
             GetComponent<AudioSource>().Play();
         }
         
-
-        //this.speed *= 0.98f;
+        transform.Translate(this.speed,0,0);
+        this.speed *= 0.98f;
     }
 }
